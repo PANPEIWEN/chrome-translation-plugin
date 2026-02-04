@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Google-style gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285f4"/>
+      <stop offset="100%" style="stop-color:#34a853"/>
+    </linearGradient>
+    
+    <!-- Secondary gradient for accent -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ea4335"/>
+      <stop offset="100%" style="stop-color:#fbbc05"/>
+    </linearGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background rounded square -->
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="url(#bgGradient)" filter="url(#shadow)"/>
+  
+  <!-- Inner subtle highlight -->
+  <rect x="12" y="12" width="104" height="52" rx="20" fill="white" opacity="0.1"/>
+  
+  <!-- Chinese character "文" - top left area -->
+  <text x="28" y="68" 
+        font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif" 
+        font-size="42" 
+        font-weight="600" 
+        fill="white">文</text>
+  
+  <!-- English letter "A" - bottom right area -->
+  <text x="70" y="100" 
+        font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif" 
+        font-size="48" 
+        font-weight="700" 
+        fill="white">A</text>
+  
+  <!-- Decorative swap arrows -->
+  <g stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8">
+    <path d="M75 45 L85 45 L85 55"/>
+    <path d="M53 83 L43 83 L43 73"/>
+  </g>
+</svg>
